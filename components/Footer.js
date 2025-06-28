@@ -5,29 +5,14 @@ export default function Footer() {
   const links = [
     {
       title: 'Email',
-      url: '/contact',
+      url: 'mailto:hello@parthdegama.site',
       icon: 'ri-mail-line',
     },
     {
-      title: 'Twitter',
-      url: 'https://twitter.com/zenorocha',
-      icon: 'ri-twitter-line',
-    },
-    {
       title: 'GitHub',
-      url: 'https://github.com/zenorocha',
+      url: 'https://github.com/pdegama',
       icon: 'ri-github-line',
-    },
-    {
-      title: 'linkedin',
-      url: 'https://linkedin.com/in/zenorocha',
-      icon: 'ri-linkedin-line',
-    },
-    {
-      title: 'Instagram',
-      url: 'https://instagram.com/zenorocha',
-      icon: 'ri-instagram-line',
-    },
+    }
   ]
 
   const renderAnchor = (link, index) => {

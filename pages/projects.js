@@ -9,8 +9,8 @@ import items from '../data/projects'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Projects // Zeno Rocha',
-    tagline: 'Work. Hobby. Open Source.',
+    title: 'Projects // Parth Degama',
+    tagline: 'Things I\'ve Built.',
     image: '/static/images/projects-bw.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
@@ -21,50 +21,27 @@ export async function getStaticProps() {
 
 function Projects(props) {
   const renderFeatured = () => {
-    const featured = ['Dracula', 'Clipboard.js', 'Resend', 'React Email']
+    const featured = ['Levify Mail', 'Box SMTP', 'MyBill', 'CanvasLib']
 
     return items
-      .map(item => {
-        return item.projects.filter(project => featured.includes(project.title))
-      })
-      .filter(item => {
-        if (item.length > 0) {
-          return item
-        }
-      })
-      .flat()
-      .map((item, index) => {
-        return <FeaturedProject key={index} project={item} />
-      })
+      .filter(project => featured.includes(project.title))
+      .map((project, index) => (
+        <FeaturedProject key={index} project={project} />
+      ))
   }
 
   const renderAll = () => {
-    return items.map((item, index) => {
-      return (
-        <div key={index}>
-          <h3>{item.year}</h3>
-          <ul>
-            {item.projects.map((project, pIndex) => {
-              return <ProjectItem key={pIndex} project={project} />
-            })}
-          </ul>
-        </div>
-      )
-    })
-  }
-
-  const getTotalProjects = () => {
-    let total = 0
-
-    for (let i = 0; i < items.length; i++) {
-      total = total + items[i].projects.length
-    }
-
-    return total
+    return (
+      <ul style={{ margin: '  rem 0', padding: '0 1.5rem', listStyle: 'disc inside' }}>
+      {items.map((project, index) => (
+        <ProjectItem key={index} project={project} />
+      ))}
+      </ul>
+    )
   }
 
   const { title, image } = props
-  const description = `I'm obsessed with side projects and <strong>building in public</strong>. Here you can navigate to <strong>${getTotalProjects()} different</strong> websites, apps, and libraries I built. Some projects are still active, others have been discontinued.`
+  const description = `A selection of projects I\'ve built — from fullstack systems and real-time tools to developer-focused interfaces. Each one reflects my focus on performance, clarity, and purpose.`
 
   return (
     <>
@@ -73,8 +50,8 @@ function Projects(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/projects" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://parthdegama.site/projects" property="og:url" />
+        <meta content={`https://parthdegama.site${image}`} property="og:image" />
       </Head>
 
       <AnimateSharedLayout>
@@ -95,7 +72,7 @@ function ProjectItem(props) {
 
   return (
     <li>
-      <a href={project.url} target="_blank">
+      <a href={project.url} target="_blank" rel="noopener noreferrer">
         {project.title}
       </a>
     </li>

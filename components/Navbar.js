@@ -9,13 +9,9 @@ export default function Navbar() {
   const router = useRouter()
   const pages = [
     'About',
-    'Articles',
     'Projects',
-    'Talks',
-    'Podcasts',
-    'Investing',
+    'Contact',
     'Uses',
-    'Reminder',
   ]
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()
@@ -24,7 +20,7 @@ export default function Navbar() {
     <AnimateSharedLayout>
       <Header>
         <Link href="/" passHref>
-          <ButtonLogo as="a">z</ButtonLogo>
+          <ButtonLogo as="a">P</ButtonLogo>
         </Link>
 
         <Nav>
@@ -133,6 +129,7 @@ const ButtonLogo = styled(ButtonHeader, {
   textDecoration: 'none',
   marginLeft: '12px',
   fontFamily: '$heading',
+  paddingTop: '6px',
 })
 
 const Nav = styled('nav', {

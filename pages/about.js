@@ -15,10 +15,10 @@ import downloadIcon from '../public/static/icons/download.json'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'About // Zeno Rocha',
+    title: 'About // Parth Degama',
     description:
-      "Zeno Rocha is a Brazilian creator and programmer. He currently lives in San Francisco, California, where he's the Founder & CEO at Resend. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
-    tagline: 'Create. Share. Repeat.',
+      "Parth Degama is a self-taught Software Engineer who began programming in 2021. Since then, he has built fullstack systems using Go, BunJS, React, and More — ranging from real-time infrastructure to developer-focused tools. With a strong focus on backend architecture and practical UI, Parth combines logic, structure, and creativity to solve real problems. Over the years, he has overcome shiny object syndrome and perfection paralysis by shifting toward clarity, focus, and execution. Today, he continues to explore and build with purpose, driven by curiosity and the mindset of a true builder.",
+    tagline: 'Think. Action. Deploy.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
     secondaryColor: 'purple',
@@ -56,21 +56,15 @@ function About(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Hey, I'm Zeno Rocha</strong>
+            <strong>Hey, I'm Parth Degama</strong>
             <Pronunciation />
-            I started as a software engineer back in 2009, working with Flash.
+            — a  <strong>Software Engineer</strong> focused on backend, frontend, and system-level development.
           </Paragraph>
           <Paragraph>
-            I'm the <strong>Founder & CEO</strong> at
-            Resend. Before that, I was a VP of Developer Experience at WorkOS and CPO at Liferay Cloud. I'm originally
-            from Brazil and now living in{' '}
-            <strong>San Francisco, California</strong> with my amazing wife and
-            beautiful daughter.
+           I started coding in <strong>2021</strong>, and since then, I've developed full products using <strong>Go, BunJS, React,</strong> and <strong>More</strong> — including mail infrastructure, real-time notification systems, and modern UIs.
           </Paragraph>
           <Paragraph>
-            <strong>I love dark mode</strong>, open source, and side projects.
-            When I'm not working, I like running, watching movies, and{' '}
-            <strong>eating cheese</strong>.
+           I enjoy building fast, stable, and useful systems with clear structure and just enough creative spark. I focus on solving real problems, and I care about clean execution more than complexity.
           </Paragraph>
         </Section>
       </Container>
@@ -101,8 +95,8 @@ function About(props) {
             <Lottie lottieRef={copyBioRef} style={iconStyle} animationData={copyBioIcon} loop={false} autoplay={false} />
             Copy Bio
           </ButtonPrimary>
-          <span style={{ margin: '0 20px 0 10px' }}>•</span>
-          <ButtonPrimary
+          {/* <span style={{ margin: '0 20px 0 10px' }}>•</span> */}
+          {/* <ButtonPrimary
             as="a"
             download
             role="button"
@@ -114,7 +108,7 @@ function About(props) {
           >
             <Lottie lottieRef={downloadRef} style={iconStyle} animationData={downloadIcon} loop={false} autoplay={false} />
             Download Headshot
-          </ButtonPrimary>
+          </ButtonPrimary> */}
         </ButtonsContainer>
       </div>
     )
@@ -188,8 +182,8 @@ function About(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/about" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://parthdegama.site/about" property="og:url" />
+        <meta content={`https://parthdegama.site${image}`} property="og:image" />
       </Head>
 
       {renderIntro()}

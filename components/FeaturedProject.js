@@ -1,12 +1,9 @@
 import { styled } from '../stitches.config'
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import Lottie from 'lottie-react'
 
 export default function FeaturedProject(props) {
   const { project } = props
-
-  const icon = require(`../public/static/icons/${project.icon}.json`)
   const iconRef = useRef()
 
   return (
@@ -17,17 +14,9 @@ export default function FeaturedProject(props) {
       onMouseLeave={() => iconRef.current?.stop()}
     >
       <Animation index={props.index}>
-        <Lottie
-          lottieRef={iconRef}
-          style={{ width: 24, height: 24, marginBottom: 10 }}
-          animationData={icon}
-          loop={false}
-          autoplay={false}
-        />
         <Body>
           <Title>{project.title}</Title>
           <Description>{project.description}</Description>
-          {project.stats && <Stats>{project.stats}</Stats>}
         </Body>
       </Animation>
     </Project>
