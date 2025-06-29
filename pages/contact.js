@@ -8,7 +8,7 @@ export async function getStaticProps() {
   const meta = {
     title: 'Contact // Parth Degama',
     tagline: 'Let\'s Talk.',
-    image: '/static/images/reminder-bw.jpg',
+    image: '/static/images/uses-bw.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
   }

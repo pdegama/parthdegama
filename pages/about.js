@@ -11,7 +11,6 @@ import stripHtml from '../lib/strip-html'
 import items from '../data/about'
 import Lottie from 'lottie-react'
 import copyBioIcon from '../public/static/icons/copy-bio.json'
-import downloadIcon from '../public/static/icons/download.json'
 
 export async function getStaticProps() {
   const meta = {
@@ -19,7 +18,7 @@ export async function getStaticProps() {
     description:
       "Parth Degama is a self-taught Software Engineer who began programming in 2021. Since then, he has built fullstack systems using Go, BunJS, React, and More — ranging from real-time infrastructure to developer-focused tools. With a strong focus on backend architecture and practical UI, Parth combines logic, structure, and creativity to solve real problems. Over the years, he has overcome shiny object syndrome and perfection paralysis by shifting toward clarity, focus, and execution. Today, he continues to explore and build with purpose, driven by curiosity and the mindset of a true builder.",
     tagline: 'Think. Action. Deploy.',
-    image: '/static/images/about-bw.jpg',
+    image: '/static/images/uses-bw.jpg',
     primaryColor: 'pink',
     secondaryColor: 'purple',
   }

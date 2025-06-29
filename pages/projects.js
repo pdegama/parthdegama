@@ -11,7 +11,7 @@ export async function getStaticProps() {
   const meta = {
     title: 'Projects // Parth Degama',
     tagline: 'Things I\'ve Built.',
-    image: '/static/images/projects-bw.jpg',
+    image: '/static/images/uses-bw.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
   }
