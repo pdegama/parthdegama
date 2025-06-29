@@ -2,7 +2,7 @@ const items = [
   {
     title: 'Levify Mail',
     description: 'A full-featured mail client with custom SMTP backend, AI reply suggestions, and real-time sync.',
-    url: 'http://mail.uniqueartsurat.com:3031/',
+    url: 'https://parthdegama.site/email-app-project',
   },
   {
     title: 'Box SMTP',
