@@ -33,7 +33,6 @@ function About(props) {
   const [toastDescription, setToastDescription] = React.useState('')
   const [showToast, setShowToast] = React.useState(false)
   const copyBioRef = React.useRef()
-  const downloadRef = React.useRef()
 
   const renderIntro = () => {
     return (
@@ -41,11 +40,9 @@ function About(props) {
         <Section>
           <Image
             alt="Zeno"
-            src="/static/images/avatar.jpg"
+            src="/static/images/73784979.png"
             width="336"
             height="336"
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
             priority
           />
         </Section>
