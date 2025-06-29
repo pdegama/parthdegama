@@ -46,15 +46,13 @@ export default function Index(props) {
             <div>
               <h1>{title}</h1>
               <p>
-                <strong>As a Software Engineer,
-                </strong><br />
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: description
-                  }}
-                >
-                </div>
+                <strong>As a Software Engineer,</strong>
               </p>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: description
+                }}
+              />
               <ShortcutHome />
             </div>
           </PostContainer>

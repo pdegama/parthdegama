@@ -1,8 +1,6 @@
-import React from 'react'
 import Head from 'next/head'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
-import Toast from '../components/Toast'
 import { Box } from '../components/Box'
 import { styled } from '../stitches.config'
 
