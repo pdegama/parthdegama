@@ -132,10 +132,3 @@ Levify Mail is not just an experiment — it’s a **powerful, scalable, and mod
 
 If Gmail is a black box, Levify Mail is a transparent, open workshop — engineered by one mind, optimized for many.
 
-## 👨‍💻 Author
-
-**Parth Degama**  
-Indie Mail Stack Engineer  
-Website: [https://parthka.dev](https://parthka.dev)  
-GitHub: [https://github.com/pdegama](https://github.com/pdegama)
-
